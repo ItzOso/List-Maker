@@ -5,7 +5,7 @@ var newItemName = document.getElementById("item-name");
 addButton.onclick = addListItem;
 
 newItemName.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
+    if (e.keyCode === 13) {
       addListItem();
     }
 });
