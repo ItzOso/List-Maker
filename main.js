@@ -4,6 +4,12 @@ var newItemName = document.getElementById("item-name");
 
 addButton.onclick = addListItem;
 
+newItemName.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      addListItem();
+    }
+});
+
 function addListItem() {
   if (newItemName.value != "") {
     var newItem = document.createElement('li');
